@@ -1,14 +1,14 @@
 package HW13;
 
-public final class  Manager extends Employee{
+public final class  Manager extends BaseEmployee{
 
     private int NumberOfSubordinates;
     private final int SALARY_COEFFICIENT = 3;
 
-    public Manager(int baseSalary, String name, int salary, int numberOfSubordinates) {
-        super(baseSalary, name, salary);
-        NumberOfSubordinates = numberOfSubordinates;
-    }
+//    public Manager(int baseSalary, String name, int salary, int numberOfSubordinates) {
+//        super(baseSalary, name, salary);
+//        NumberOfSubordinates = numberOfSubordinates;
+//    }
 
     public int getNumberOfSubordinates() {
         return NumberOfSubordinates;
@@ -18,14 +18,14 @@ public final class  Manager extends Employee{
         NumberOfSubordinates = numberOfSubordinates;
     }
 
-    @Override
+//    @Override
 
-    public int getSalary() {
-        if(getNumberOfSubordinates()==0){
-            return getBaseSalary();
-        }
-        else {
-            return (int)(getBaseSalary() * getNumberOfSubordinates()*SALARY_COEFFICIENT/100.0);
-        }
-    }
+//    public int getSalary() {
+//        if(getNumberOfSubordinates()==0){
+//            return getBaseSalary();
+//        }
+//        else {
+//            return (int)(getBaseSalary() * getNumberOfSubordinates()*SALARY_COEFFICIENT/100.0);
+//        }
+//    }
 }

@@ -1,22 +1,24 @@
 package HW13;
 
-public abstract class Employee {
- private int BaseSalary;
+
+public  class Employee extends BaseEmployee {
  private String name;
- private int salary;
+ private int salaryDay;
+ private int age;
+ private String gender;
 
- public Employee(int baseSalary, String name, int salary) {
-  BaseSalary = baseSalary;
-  this.name = name;
-  this.salary = salary;
- }
+ Employee em= new Employee();
+ int emsal = em.getSalaryDay();
 
- public int getBaseSalary() {
-  return BaseSalary;
- }
+ @Override
 
- public void setBaseSalary(int baseSalary) {
-  BaseSalary = baseSalary;
+ public int getSalary(Month[] monthArray){
+  int salaryMon = 0;
+  for (int i = 0; i < monthArray.length; i++) {
+   salaryMon = emsal * monthArray[i].getDayWork();
+
+  }
+  return salaryMon;
  }
 
  public String getName() {
@@ -27,7 +29,31 @@ public abstract class Employee {
   this.name = name;
  }
 
- public int getSalary() {
-  return salary;
+ public int getSalaryDay() {
+  return salaryDay;
  }
+
+ public void setSalary(int salary) {
+  this.salaryDay = salary;
+ }
+
+ public int getAge() {
+  return age;
+ }
+
+ public void setAge(int age) {
+  this.age = age;
+ }
+
+ public String getGender() {
+  return gender;
+ }
+
+ public void setGender(String gender) {
+  this.gender = gender;
+ }
+
+
+
 }
+
