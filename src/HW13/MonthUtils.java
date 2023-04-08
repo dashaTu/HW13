@@ -2,6 +2,19 @@ package HW13;
 
 public class MonthUtils {
 
+    static final Month January = new Month ("January",31,16);
+    static final Month February = new Month ("February",28,19);
+    static final Month March = new Month ("March",31,22);
+    static final Month April = new Month ("April",30,21);
+    static final Month May = new Month ("May",31,18);
+    static final Month June = new Month ("June",30,21);
+    static final Month July = new Month ("July",31,20);
+    static final Month August = new Month ("August",31,20);
+    static final Month September = new Month ("September",30,21);
+    static final Month October = new Month ("October",30,21);
+    static final Month November = new Month ("November",30,21);
+    static final Month December = new Month ("December",31,22);
+
 
      static  String [] firstQuarter = {
             "January", "February", "March"
